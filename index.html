@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Curiosity Daily</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Curiosity Daily</h1>
+    <p class="subtitle">Not sure what to dive into today? Let curiosity pick for you.</p>
+
+    <div class="card">
+      <h2>Today's Topic</h2>
+      <div id="topic-box" class="topic-box">Click the button to generate a topic</div>
+      <button onclick="showTopic()">Generate Topic</button>
+    </div>
+
+    <div class="card">
+      <h2>Journal Your Thoughts</h2>
+      <textarea id="journal" placeholder="What did you learn today?"></textarea>
+      <button onclick="saveJournal()">Save Entry</button>
+    </div>
+
+    <div class="card">
+      <h2>Previous Entries</h2>
+      <ul id="history"></ul>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
